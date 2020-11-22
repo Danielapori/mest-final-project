@@ -12,13 +12,13 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
                        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                        <Navbar.Collapse id="responsive-navbar-nav">
                            <Nav className="mr-auto">
-                               <Link to="/"><Nav.Link>Home</Nav.Link></Link>
-                               <Link to="/about"><Nav.Link>About Us</Nav.Link></Link>
+                               <Nav.Link as={Link} to="/">Home</Nav.Link>
+                               <Nav.Link as={Link} to="/about">About Us</Nav.Link>
                                </Nav>
                                
                            <Nav>
-                               <Link to="/signin"><Nav.Link>Sign In</Nav.Link></Link>
-                               <Link to="/join"><Nav.Link>Sign Up</Nav.Link></Link>
+                               <Nav.Link as={Link} to="signin">Sign In</Nav.Link>
+                               <Nav.Link as={Link} to="join">Sign Up</Nav.Link>
                            </Nav>
                        </Navbar.Collapse>
                    </Container>

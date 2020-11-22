@@ -1,11 +1,11 @@
 import React from 'react';
 import './App.css';
 import "bootstrap/dist/css/bootstrap.css";
-import Home from './components/Home';
-import Signinpage from './components/Signinpage';
-import Signup from './components/Signup';
+import Home from './pages/Home';
+import Signinpage from './pages/Signinpage';
+import Signup from './pages/Signup';
 import Header from './components/Header';
-import ContactUs from './components/ContactUs';
+import ContactUs from './pages/ContactUs';
 import Footer from './components/Footer';
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom';
 
@@ -14,12 +14,10 @@ function App() {
     <Router>
     <div className="App">
       <Switch>
-      <Route path="/" exact component={Home} />
-      <Route path="/signin" component= {Signinpage} />
-      <Header />
-      <Route path="/join" component= {Signup}/>
-      <Route path="/contact" component= {ContactUs} />
-      <Footer />
+        <Route path="/" exact={true} component={Home} />
+        <Route exact={true} path="/signin" component= {Signinpage} />
+        <Route exact={true} path="/join" component= {Signup}/>
+        <Route exact={true} path="/contact" component= {ContactUs} />
       </Switch>
     </div>
     </Router>
