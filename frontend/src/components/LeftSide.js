@@ -2,6 +2,10 @@ import React from 'react';
 import {Form, Button} from 'react-bootstrap';
 
 const LeftSide = () => {
+    const login = () => {
+
+    }
+    
     return (
         <div>
             <br/>
